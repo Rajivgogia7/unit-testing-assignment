@@ -1,0 +1,496 @@
+{
+	"info": {
+		"_postman_id": "411befc4-0c0a-43df-929f-d3f1165ab18e",
+		"name": "Unit Testing Assignment",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "Traders",
+			"item": [
+				{
+					"name": "AddTrader",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "correlationId",
+								"value": "\"1\"",
+								"type": "text"
+							},
+							{
+								"key": "applicationId",
+								"value": "\"1\"",
+								"type": "text"
+							},
+							{
+								"key": "",
+								"value": "1",
+								"type": "text",
+								"disabled": true
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n  \"traderCode\": \"rajiv\",\r\n  \"traderName\": \"rajiv\",\r\n  \"funds\": 10\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "https://localhost:44313/v1/trader-profiles/create",
+							"protocol": "https",
+							"host": [
+								"localhost"
+							],
+							"port": "44313",
+							"path": [
+								"v1",
+								"trader-profiles",
+								"create"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "GetAllTraders",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true,
+						"disabledSystemHeaders": {
+							"content-type": true
+						}
+					},
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "correlationId",
+								"value": "c64f7c23-520f-4659-ad3b-f9e80e8cba61",
+								"type": "text"
+							},
+							{
+								"key": "applicationId",
+								"value": "test",
+								"type": "text"
+							},
+							{
+								"key": "Content-Type",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": ""
+						},
+						"url": {
+							"raw": "https://localhost:44313/v1/trader-profiles",
+							"protocol": "https",
+							"host": [
+								"localhost"
+							],
+							"port": "44313",
+							"path": [
+								"v1",
+								"trader-profiles"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "GetTraderByCode",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true,
+						"disabledSystemHeaders": {
+							"content-type": true
+						}
+					},
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "correlationId",
+								"value": "c64f7c23-520f-4659-ad3b-f9e80e8cba61",
+								"type": "text"
+							},
+							{
+								"key": "applicationId",
+								"value": "test",
+								"type": "text"
+							},
+							{
+								"key": "Content-Type",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": ""
+						},
+						"url": {
+							"raw": "https://localhost:44313/v1/trader-profiles/rajiv",
+							"protocol": "https",
+							"host": [
+								"localhost"
+							],
+							"port": "44313",
+							"path": [
+								"v1",
+								"trader-profiles",
+								"rajiv"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "AddFundsToTradersAccount",
+					"request": {
+						"method": "PUT",
+						"header": [
+							{
+								"key": "correlationId",
+								"value": "\"1\"",
+								"type": "text"
+							},
+							{
+								"key": "applicationId",
+								"value": "\"1\"",
+								"type": "text"
+							},
+							{
+								"key": "",
+								"value": "1",
+								"type": "text",
+								"disabled": true
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n  \"Funds\": 100\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "https://localhost:44313/v1/funds/add/rajiv",
+							"protocol": "https",
+							"host": [
+								"localhost"
+							],
+							"port": "44313",
+							"path": [
+								"v1",
+								"funds",
+								"add",
+								"rajiv"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Equity",
+			"item": [
+				{
+					"name": "AddEquity",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "correlationId",
+								"value": "\"1\"",
+								"type": "text"
+							},
+							{
+								"key": "applicationId",
+								"value": "\"1\"",
+								"type": "text"
+							},
+							{
+								"key": "",
+								"value": "1",
+								"type": "text",
+								"disabled": true
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n  \"equityCode\": \"test1\",\r\n  \"equityName\": \"test1\",\r\n  \"quantity\": 10,\r\n  \"price\": 10\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "https://localhost:44313/v1/equities/add",
+							"protocol": "https",
+							"host": [
+								"localhost"
+							],
+							"port": "44313",
+							"path": [
+								"v1",
+								"equities",
+								"add"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "GetAllEquities",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true,
+						"disabledSystemHeaders": {
+							"content-type": true
+						}
+					},
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "correlationId",
+								"value": "c64f7c23-520f-4659-ad3b-f9e80e8cba61",
+								"type": "text"
+							},
+							{
+								"key": "applicationId",
+								"value": "test",
+								"type": "text"
+							},
+							{
+								"key": "Content-Type",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": ""
+						},
+						"url": {
+							"raw": "https://localhost:44313/v1/equities",
+							"protocol": "https",
+							"host": [
+								"localhost"
+							],
+							"port": "44313",
+							"path": [
+								"v1",
+								"equities"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "GetEquityByCode",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true,
+						"disabledSystemHeaders": {
+							"content-type": true
+						}
+					},
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "correlationId",
+								"value": "c64f7c23-520f-4659-ad3b-f9e80e8cba61",
+								"type": "text"
+							},
+							{
+								"key": "applicationId",
+								"value": "test",
+								"type": "text"
+							},
+							{
+								"key": "Content-Type",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": ""
+						},
+						"url": {
+							"raw": "https://localhost:44313/v1/equities/test1",
+							"protocol": "https",
+							"host": [
+								"localhost"
+							],
+							"port": "44313",
+							"path": [
+								"v1",
+								"equities",
+								"test1"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "AddEquityStock",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "correlationId",
+								"value": "\"1\"",
+								"type": "text"
+							},
+							{
+								"key": "applicationId",
+								"value": "\"1\"",
+								"type": "text"
+							},
+							{
+								"key": "",
+								"value": "1",
+								"type": "text",
+								"disabled": true
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n  \"Quantity\": 100\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "https://localhost:44313/v1/equities/add-stock/test1",
+							"protocol": "https",
+							"host": [
+								"localhost"
+							],
+							"port": "44313",
+							"path": [
+								"v1",
+								"equities",
+								"add-stock",
+								"test1"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Trading",
+			"item": [
+				{
+					"name": "BuyEquity",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "correlationId",
+								"value": "\"1\"",
+								"type": "text"
+							},
+							{
+								"key": "applicationId",
+								"value": "\"1\"",
+								"type": "text"
+							},
+							{
+								"key": "",
+								"value": "1",
+								"type": "text",
+								"disabled": true
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n  \"equityCode\": \"test1\",\r\n  \"quantity\": 1\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "https://localhost:44313/v1/trader-profiles/buy-equity/rajiv",
+							"protocol": "https",
+							"host": [
+								"localhost"
+							],
+							"port": "44313",
+							"path": [
+								"v1",
+								"trader-profiles",
+								"buy-equity",
+								"rajiv"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "SellEquity",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "correlationId",
+								"value": "\"1\"",
+								"type": "text"
+							},
+							{
+								"key": "applicationId",
+								"value": "\"1\"",
+								"type": "text"
+							},
+							{
+								"key": "",
+								"value": "1",
+								"type": "text",
+								"disabled": true
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n  \"equityCode\": \"test\",\r\n  \"quantity\": 1\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "https://localhost:44313/v1/trader-profiles/sell-equity/rajiv",
+							"protocol": "https",
+							"host": [
+								"localhost"
+							],
+							"port": "44313",
+							"path": [
+								"v1",
+								"trader-profiles",
+								"sell-equity",
+								"rajiv"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		}
+	]
+}
