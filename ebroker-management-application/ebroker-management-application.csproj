@@ -1,0 +1,52 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>netcoreapp3.1</TargetFramework>
+    <RootNamespace>ebroker_management_application</RootNamespace>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <Compile Remove="Equities\**" />
+    <EmbeddedResource Remove="Equities\**" />
+    <None Remove="Equities\**" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Compile Include="Equities\Commands\AddStock\AddStockCommand.cs" />
+    <Compile Include="Equities\Commands\AddStock\AddStockHandler.cs" />
+    <Compile Include="Equities\Commands\AddStock\AddStockResponse.cs" />
+    <Compile Include="Equities\Commands\CreateEquity\CreateEquityCommand.cs" />
+    <Compile Include="Equities\Commands\CreateEquity\CreateEquityHandler.cs" />
+    <Compile Include="Equities\Commands\CreateEquity\CreateEquityResponse.cs" />
+    <Compile Include="Equities\IEquityService.cs" />
+    <Compile Include="Equities\Models\AddStockStatus.cs" />
+    <Compile Include="Equities\Models\EquityCreationStatus.cs" />
+    <Compile Include="Equities\Queries\GetEquity\GetEquityQuery.cs" />
+    <Compile Include="Equities\Queries\GetEquity\GetEquityQueryHandler.cs" />
+    <Compile Include="Equities\Queries\GetEquity\GetEquityResponse.cs" />
+    <Compile Include="Equities\EquityService.cs" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="AutoMapper" Version="10.1.1" />
+    <PackageReference Include="AutoMapper.Extensions.Microsoft.DependencyInjection" Version="8.1.1" />
+    <PackageReference Include="AWSSDK.Core" Version="3.7.5.6" />
+    <PackageReference Include="FluentValidation" Version="9.5.3" />
+    <PackageReference Include="MediatR" Version="9.0.0" />
+    <PackageReference Include="MediatR.Extensions.Microsoft.DependencyInjection" Version="9.0.0" />
+    <PackageReference Include="Microsoft.IdentityModel.Tokens" Version="6.15.0" />
+    <PackageReference Include="NJsonSchema" Version="10.6.6" />
+    <PackageReference Include="System.IdentityModel.Tokens.Jwt" Version="6.15.0" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\ebroker-management-data\ebroker-management-data.csproj" />
+    <ProjectReference Include="..\ebroker-management-domain\ebroker-management-domain.csproj" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Folder Include="Equities\Constants\" />
+    <Folder Include="Traders\Constants\" />
+  </ItemGroup>
+
+</Project>

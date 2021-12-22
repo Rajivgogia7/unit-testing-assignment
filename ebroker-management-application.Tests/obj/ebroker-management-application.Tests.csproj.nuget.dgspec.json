@@ -1,0 +1,331 @@
+{
+  "format": 1,
+  "restore": {
+    "D:\\Documents\\Nagp\\Training and Assignment\\8. Unit Testing - pending\\Assignment\\2\\ebroker-management-api\\ebroker-management-application.Tests\\ebroker-management-application.Tests.csproj": {}
+  },
+  "projects": {
+    "D:\\Documents\\Nagp\\Training and Assignment\\8. Unit Testing - pending\\Assignment\\2\\ebroker-management-api\\ebroker-management-application.Tests\\ebroker-management-application.Tests.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "D:\\Documents\\Nagp\\Training and Assignment\\8. Unit Testing - pending\\Assignment\\2\\ebroker-management-api\\ebroker-management-application.Tests\\ebroker-management-application.Tests.csproj",
+        "projectName": "ebroker-management-application.Tests",
+        "projectPath": "D:\\Documents\\Nagp\\Training and Assignment\\8. Unit Testing - pending\\Assignment\\2\\ebroker-management-api\\ebroker-management-application.Tests\\ebroker-management-application.Tests.csproj",
+        "packagesPath": "C:\\Users\\rajivgogia\\.nuget\\packages\\",
+        "outputPath": "D:\\Documents\\Nagp\\Training and Assignment\\8. Unit Testing - pending\\Assignment\\2\\ebroker-management-api\\ebroker-management-application.Tests\\obj\\",
+        "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
+        ],
+        "configFilePaths": [
+          "C:\\Users\\rajivgogia\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "netcoreapp3.1"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "netcoreapp3.1": {
+            "targetAlias": "netcoreapp3.1",
+            "projectReferences": {
+              "D:\\Documents\\Nagp\\Training and Assignment\\8. Unit Testing - pending\\Assignment\\2\\ebroker-management-api\\ebroker-management-application\\ebroker-management-application.csproj": {
+                "projectPath": "D:\\Documents\\Nagp\\Training and Assignment\\8. Unit Testing - pending\\Assignment\\2\\ebroker-management-api\\ebroker-management-application\\ebroker-management-application.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "netcoreapp3.1": {
+          "targetAlias": "netcoreapp3.1",
+          "dependencies": {
+            "Microsoft.NET.Test.Sdk": {
+              "target": "Package",
+              "version": "[16.5.0, )"
+            },
+            "MockQueryable.Moq": {
+              "target": "Package",
+              "version": "[5.0.1, )"
+            },
+            "Moq": {
+              "target": "Package",
+              "version": "[4.16.1, )"
+            },
+            "coverlet.collector": {
+              "target": "Package",
+              "version": "[1.2.0, )"
+            },
+            "coverlet.msbuild": {
+              "include": "Runtime, Build, Native, ContentFiles, Analyzers, BuildTransitive",
+              "suppressParent": "All",
+              "target": "Package",
+              "version": "[3.1.0, )"
+            },
+            "xunit": {
+              "target": "Package",
+              "version": "[2.4.0, )"
+            },
+            "xunit.runner.visualstudio": {
+              "target": "Package",
+              "version": "[2.4.0, )"
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.404\\RuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "D:\\Documents\\Nagp\\Training and Assignment\\8. Unit Testing - pending\\Assignment\\2\\ebroker-management-api\\ebroker-management-application\\ebroker-management-application.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "D:\\Documents\\Nagp\\Training and Assignment\\8. Unit Testing - pending\\Assignment\\2\\ebroker-management-api\\ebroker-management-application\\ebroker-management-application.csproj",
+        "projectName": "ebroker-management-application",
+        "projectPath": "D:\\Documents\\Nagp\\Training and Assignment\\8. Unit Testing - pending\\Assignment\\2\\ebroker-management-api\\ebroker-management-application\\ebroker-management-application.csproj",
+        "packagesPath": "C:\\Users\\rajivgogia\\.nuget\\packages\\",
+        "outputPath": "D:\\Documents\\Nagp\\Training and Assignment\\8. Unit Testing - pending\\Assignment\\2\\ebroker-management-api\\ebroker-management-application\\obj\\",
+        "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
+        ],
+        "configFilePaths": [
+          "C:\\Users\\rajivgogia\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "netcoreapp3.1"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "netcoreapp3.1": {
+            "targetAlias": "netcoreapp3.1",
+            "projectReferences": {
+              "D:\\Documents\\Nagp\\Training and Assignment\\8. Unit Testing - pending\\Assignment\\2\\ebroker-management-api\\ebroker-management-data\\ebroker-management-data.csproj": {
+                "projectPath": "D:\\Documents\\Nagp\\Training and Assignment\\8. Unit Testing - pending\\Assignment\\2\\ebroker-management-api\\ebroker-management-data\\ebroker-management-data.csproj"
+              },
+              "D:\\Documents\\Nagp\\Training and Assignment\\8. Unit Testing - pending\\Assignment\\2\\ebroker-management-api\\ebroker-management-domain\\ebroker-management-domain.csproj": {
+                "projectPath": "D:\\Documents\\Nagp\\Training and Assignment\\8. Unit Testing - pending\\Assignment\\2\\ebroker-management-api\\ebroker-management-domain\\ebroker-management-domain.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "netcoreapp3.1": {
+          "targetAlias": "netcoreapp3.1",
+          "dependencies": {
+            "AWSSDK.Core": {
+              "target": "Package",
+              "version": "[3.7.5.6, )"
+            },
+            "AutoMapper": {
+              "target": "Package",
+              "version": "[10.1.1, )"
+            },
+            "AutoMapper.Extensions.Microsoft.DependencyInjection": {
+              "target": "Package",
+              "version": "[8.1.1, )"
+            },
+            "FluentValidation": {
+              "target": "Package",
+              "version": "[9.5.3, )"
+            },
+            "MediatR": {
+              "target": "Package",
+              "version": "[9.0.0, )"
+            },
+            "MediatR.Extensions.Microsoft.DependencyInjection": {
+              "target": "Package",
+              "version": "[9.0.0, )"
+            },
+            "Microsoft.IdentityModel.Tokens": {
+              "target": "Package",
+              "version": "[6.15.0, )"
+            },
+            "NJsonSchema": {
+              "target": "Package",
+              "version": "[10.6.6, )"
+            },
+            "System.IdentityModel.Tokens.Jwt": {
+              "target": "Package",
+              "version": "[6.15.0, )"
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.404\\RuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "D:\\Documents\\Nagp\\Training and Assignment\\8. Unit Testing - pending\\Assignment\\2\\ebroker-management-api\\ebroker-management-data\\ebroker-management-data.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "D:\\Documents\\Nagp\\Training and Assignment\\8. Unit Testing - pending\\Assignment\\2\\ebroker-management-api\\ebroker-management-data\\ebroker-management-data.csproj",
+        "projectName": "ebroker-management-data",
+        "projectPath": "D:\\Documents\\Nagp\\Training and Assignment\\8. Unit Testing - pending\\Assignment\\2\\ebroker-management-api\\ebroker-management-data\\ebroker-management-data.csproj",
+        "packagesPath": "C:\\Users\\rajivgogia\\.nuget\\packages\\",
+        "outputPath": "D:\\Documents\\Nagp\\Training and Assignment\\8. Unit Testing - pending\\Assignment\\2\\ebroker-management-api\\ebroker-management-data\\obj\\",
+        "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
+        ],
+        "configFilePaths": [
+          "C:\\Users\\rajivgogia\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "netcoreapp3.1"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "netcoreapp3.1": {
+            "targetAlias": "netcoreapp3.1",
+            "projectReferences": {
+              "D:\\Documents\\Nagp\\Training and Assignment\\8. Unit Testing - pending\\Assignment\\2\\ebroker-management-api\\ebroker-management-domain\\ebroker-management-domain.csproj": {
+                "projectPath": "D:\\Documents\\Nagp\\Training and Assignment\\8. Unit Testing - pending\\Assignment\\2\\ebroker-management-api\\ebroker-management-domain\\ebroker-management-domain.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "netcoreapp3.1": {
+          "targetAlias": "netcoreapp3.1",
+          "dependencies": {
+            "Microsoft.EntityFrameworkCore.Relational": {
+              "target": "Package",
+              "version": "[5.0.4, )"
+            },
+            "Newtonsoft.Json": {
+              "target": "Package",
+              "version": "[13.0.1, )"
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.404\\RuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "D:\\Documents\\Nagp\\Training and Assignment\\8. Unit Testing - pending\\Assignment\\2\\ebroker-management-api\\ebroker-management-domain\\ebroker-management-domain.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "D:\\Documents\\Nagp\\Training and Assignment\\8. Unit Testing - pending\\Assignment\\2\\ebroker-management-api\\ebroker-management-domain\\ebroker-management-domain.csproj",
+        "projectName": "ebroker-management-domain",
+        "projectPath": "D:\\Documents\\Nagp\\Training and Assignment\\8. Unit Testing - pending\\Assignment\\2\\ebroker-management-api\\ebroker-management-domain\\ebroker-management-domain.csproj",
+        "packagesPath": "C:\\Users\\rajivgogia\\.nuget\\packages\\",
+        "outputPath": "D:\\Documents\\Nagp\\Training and Assignment\\8. Unit Testing - pending\\Assignment\\2\\ebroker-management-api\\ebroker-management-domain\\obj\\",
+        "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
+        ],
+        "configFilePaths": [
+          "C:\\Users\\rajivgogia\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "netcoreapp3.1"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "netcoreapp3.1": {
+            "targetAlias": "netcoreapp3.1",
+            "projectReferences": {}
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "netcoreapp3.1": {
+          "targetAlias": "netcoreapp3.1",
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.404\\RuntimeIdentifierGraph.json"
+        }
+      }
+    }
+  }
+}
