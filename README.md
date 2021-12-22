@@ -29,7 +29,7 @@ To execute test: dotnet test /p:CollectCoverage=true /p:CoverletOutputFormat=cob
 To generate coverage report: dotnet test /p:CollectCoverage=true /p:CoverletOutputFormat=cobertura /p:CoverletOutput=.\TestResults\Coverage\
 ```
 
-### ebroker-management-application.Tests
+### ebroker-management-data-Tests
 ```
 To execute test: dotnet test /p:CollectCoverage=true /p:CoverletOutputFormat=cobertura /p:CoverletOutput=.\TestResults\Coverage\
 To generate coverage report: dotnet test /p:CollectCoverage=true /p:CoverletOutputFormat=cobertura /p:CoverletOutput=.\TestResults\Coverage\
