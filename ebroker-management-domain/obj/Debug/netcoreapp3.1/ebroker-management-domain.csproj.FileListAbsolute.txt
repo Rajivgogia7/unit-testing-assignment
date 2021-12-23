@@ -55,4 +55,3 @@ D:\Documents\GitHub_Projects\unit-testing-assignment\ebroker-management-domain\o
 D:\Documents\GitHub_Projects\unit-testing-assignment\ebroker-management-domain\obj\Debug\netcoreapp3.1\ebroker-management-domain.csproj.CoreCompileInputs.cache
 D:\Documents\GitHub_Projects\unit-testing-assignment\ebroker-management-domain\obj\Debug\netcoreapp3.1\ebroker-management-domain.dll
 D:\Documents\GitHub_Projects\unit-testing-assignment\ebroker-management-domain\obj\Debug\netcoreapp3.1\ebroker-management-domain.pdb
-D:\Documents\GitHub_Projects\unit-testing-assignment\ebroker-management-domain\obj\Debug\netcoreapp3.1\ebroker-management-domain.csproj.AssemblyReference.cache

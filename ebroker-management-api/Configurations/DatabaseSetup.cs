@@ -3,6 +3,7 @@ using Microsoft.EntityFrameworkCore;
 using Microsoft.Extensions.DependencyInjection;
 using System;
 using Microsoft.Extensions.Configuration;
+using Microsoft.EntityFrameworkCore.Diagnostics;
 
 namespace EBroker.Management.Api.Configurations
 {
@@ -15,11 +16,11 @@ namespace EBroker.Management.Api.Configurations
                 throw new ArgumentNullException(nameof(services));
             }
             // To use MySQL Database
-            string mySqlConnectionStr = configuration.GetConnectionString("DefaultConnection");
-            services.AddDbContextPool<EBrokerDbContext>(options => options.UseMySql(mySqlConnectionStr, ServerVersion.AutoDetect(mySqlConnectionStr)));
+            //string mySqlConnectionStr = configuration.GetConnectionString("DefaultConnection");
+            //services.AddDbContextPool<EBrokerDbContext>(options => options.UseMySql(mySqlConnectionStr, ServerVersion.AutoDetect(mySqlConnectionStr)));
 
             // To use InMemory Database
-            // services.AddDbContext<EBrokerDbContext>(options => options.UseInMemoryDatabase(databaseName: "EBrokerManagementSystemDB").ConfigureWarnings(x => x.Ignore(InMemoryEventId.TransactionIgnoredWarning)));
+            services.AddDbContext<EBrokerDbContext>(options => options.UseInMemoryDatabase(databaseName: "EBrokerManagementSystemDB").ConfigureWarnings(x => x.Ignore(InMemoryEventId.TransactionIgnoredWarning)));
         }
     }
 }
