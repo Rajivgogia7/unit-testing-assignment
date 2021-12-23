@@ -70,12 +70,12 @@ To generate coverage report: dotnet test /p:CollectCoverage=true /p:CoverletOutp
 ```
 Uploaded a file in the repository itself - Unit Testing Assignment.postman_collection containing the requests for:
 
-* Adding Trader
-* Getting All Traders
-* Getting Trader by Trader Code
-* Adding funds to trader's account
+* Add Trader
+* Get All Traders
+* Get Trader by Trader Code
+* Add funds to trader's account
 
-* Adding Equity
+* Add Equity
 * Get All Equities
 * Get Equity by Equity Code
 * Add more stock to existing equity
