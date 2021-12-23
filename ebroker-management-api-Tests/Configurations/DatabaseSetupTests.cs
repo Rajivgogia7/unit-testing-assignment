@@ -20,18 +20,25 @@ namespace EBroker.Management.Api.Tests.Configurations
         }
 
         [Fact]
-        public async Task Should_Throw_Exception_When_Service_Is_Null()
+        public async Task ShouldThrowException_When_Service_Is_Null()
         {
+            //Arrange
             ServiceCollection collection = null;
+
+            //Act and Assert
             Assert.Throws<ArgumentNullException>(() => collection.AddDatabaseSetup(_configuration.Object));
         }
 
         [Fact]
-        public async Task Should_Add_DbContext_Service()
+        public async Task ShouldAdd_DbContext_Service()
         {
+            //Arrange
             ServiceCollection collection = new ServiceCollection();
+
+            //Act
             collection.AddDatabaseSetup(_configuration.Object);
 
+            //Assert
             Assert.Contains(collection, x => x.ServiceType == typeof(EBrokerDbContext));
         }
     }

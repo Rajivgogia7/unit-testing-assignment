@@ -38,11 +38,11 @@ namespace EBroker.Management.Application.Traders.Commands.SellEquity{
                     TimeSpan StartTime = new TimeSpan(9, 0, 0); //9 A.M
                     TimeSpan EndTime = new TimeSpan(15, 0, 0); //3 P.M
 
-                    if ((DateTimeProvider.Now_Sell().DayOfWeek == DayOfWeek.Saturday) || (DateTimeProvider.Now_Sell().DayOfWeek == DayOfWeek.Sunday))
+                    if ((DateTimeProvider.NowSell().DayOfWeek == DayOfWeek.Saturday) || (DateTimeProvider.NowSell().DayOfWeek == DayOfWeek.Sunday))
                     {
                         return new SellEquityResponse { EquityCode = request.EquityCode, Quantity = request.Quantity, Status = TradingStatus.NOT_A_VALID_TIME_OR_DAY };
                     }
-                    else if ((DateTimeProvider.Now_Sell().DayOfWeek != DayOfWeek.Saturday) && (DateTimeProvider.Now_Sell().DayOfWeek != DayOfWeek.Sunday) && !((DateTimeProvider.Now_Sell().TimeOfDay > StartTime) && (DateTimeProvider.Now_Sell().TimeOfDay < EndTime)))
+                    else if ((DateTimeProvider.NowSell().DayOfWeek != DayOfWeek.Saturday) && (DateTimeProvider.NowSell().DayOfWeek != DayOfWeek.Sunday) && !((DateTimeProvider.NowSell().TimeOfDay > StartTime) && (DateTimeProvider.NowSell().TimeOfDay < EndTime)))
                     {
                         return new SellEquityResponse { EquityCode = request.EquityCode, Quantity = request.Quantity, Status = TradingStatus.NOT_A_VALID_TIME_OR_DAY };
                     }

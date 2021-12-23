@@ -1,10 +1,10 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<coverage line-rate="0.9736" branch-rate="0.909" version="1.9" timestamp="1640214104" lines-covered="74" lines-valid="76" branches-covered="20" branches-valid="22">
+<coverage line-rate="0.9787" branch-rate="0.909" version="1.9" timestamp="1640275332" lines-covered="92" lines-valid="94" branches-covered="20" branches-valid="22">
   <sources>
-    <source>D:\Documents\Nagp\Training and Assignment\8. Unit Testing - pending\Assignment\2\ebroker-management-api\</source>
+    <source>D:\Documents\GitHub_Projects\unit-testing-assignment\</source>
   </sources>
   <packages>
-    <package name="ebroker-management-data" line-rate="0.9682" branch-rate="0.909" complexity="30">
+    <package name="ebroker-management-data" line-rate="0.9753000000000001" branch-rate="0.909" complexity="30">
       <classes>
         <class name="EBroker.Management.Data.UnitOfWork`1" filename="ebroker-management-data\UnitOfWork.cs" line-rate="0.9629000000000001" branch-rate="0.909" complexity="25">
           <methods>
@@ -259,16 +259,34 @@
             </method>
             <method name="OnModelCreating" signature="(Microsoft.EntityFrameworkCore.ModelBuilder)" line-rate="1" branch-rate="1" complexity="1">
               <lines>
+                <line number="25" hits="1" branch="False" />
+                <line number="29" hits="1" branch="False" />
                 <line number="30" hits="1" branch="False" />
                 <line number="31" hits="1" branch="False" />
-                <line number="32" hits="1" branch="False" />
+                <line number="34" hits="1" branch="False" />
+                <line number="35" hits="1" branch="False" />
+                <line number="36" hits="1" branch="False" />
+                <line number="39" hits="1" branch="False" />
+                <line number="40" hits="1" branch="False" />
+                <line number="41" hits="1" branch="False" />
+                <line number="42" hits="1" branch="False" />
+                <line number="44" hits="1" branch="False" />
+                <line number="45" hits="1" branch="False" />
+                <line number="46" hits="1" branch="False" />
+                <line number="47" hits="1" branch="False" />
+                <line number="48" hits="1" branch="False" />
+                <line number="50" hits="1" branch="False" />
+                <line number="51" hits="1" branch="False" />
+                <line number="52" hits="1" branch="False" />
+                <line number="53" hits="1" branch="False" />
+                <line number="54" hits="1" branch="False" />
               </lines>
             </method>
             <method name=".ctor" signature="(Microsoft.EntityFrameworkCore.DbContextOptions`1&lt;EBroker.Management.Data.Context.EBrokerDbContext&gt;)" line-rate="1" branch-rate="1" complexity="1">
               <lines>
-                <line number="26" hits="9" branch="False" />
-                <line number="27" hits="9" branch="False" />
-                <line number="28" hits="9" branch="False" />
+                <line number="21" hits="9" branch="False" />
+                <line number="22" hits="9" branch="False" />
+                <line number="23" hits="9" branch="False" />
               </lines>
             </method>
           </methods>
@@ -276,12 +294,30 @@
             <line number="10" hits="18" branch="False" />
             <line number="11" hits="18" branch="False" />
             <line number="12" hits="18" branch="False" />
+            <line number="25" hits="1" branch="False" />
+            <line number="29" hits="1" branch="False" />
             <line number="30" hits="1" branch="False" />
             <line number="31" hits="1" branch="False" />
-            <line number="32" hits="1" branch="False" />
-            <line number="26" hits="9" branch="False" />
-            <line number="27" hits="9" branch="False" />
-            <line number="28" hits="9" branch="False" />
+            <line number="34" hits="1" branch="False" />
+            <line number="35" hits="1" branch="False" />
+            <line number="36" hits="1" branch="False" />
+            <line number="39" hits="1" branch="False" />
+            <line number="40" hits="1" branch="False" />
+            <line number="41" hits="1" branch="False" />
+            <line number="42" hits="1" branch="False" />
+            <line number="44" hits="1" branch="False" />
+            <line number="45" hits="1" branch="False" />
+            <line number="46" hits="1" branch="False" />
+            <line number="47" hits="1" branch="False" />
+            <line number="48" hits="1" branch="False" />
+            <line number="50" hits="1" branch="False" />
+            <line number="51" hits="1" branch="False" />
+            <line number="52" hits="1" branch="False" />
+            <line number="53" hits="1" branch="False" />
+            <line number="54" hits="1" branch="False" />
+            <line number="21" hits="9" branch="False" />
+            <line number="22" hits="9" branch="False" />
+            <line number="23" hits="9" branch="False" />
           </lines>
         </class>
       </classes>

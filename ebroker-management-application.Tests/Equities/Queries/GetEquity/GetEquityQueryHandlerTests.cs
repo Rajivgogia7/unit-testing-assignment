@@ -1,7 +1,6 @@
 ﻿using EBroker.Management.Application.Equities.Queries.GetEquity;
 using EBroker.Management.Data.Context;
 using EBroker.Management.Data.Repository;
-using Microsoft.Extensions.Logging;
 using Moq;
 using Xunit;
 using EBroker.Management.Domain.Equity;

@@ -107,7 +107,7 @@ namespace EBroker.Management.Application.Tests.Traders.Commands.CreateTraderProf
 
         //When Trader Added Without Initializing Traders List
         [Fact]
-        public async Task Handle_WhenNewTraderAdded_WithoutInitializing_TradersList_ShouldThrow_Exception()
+        public async Task Handle_WhenNewTraderAdded_WithoutInitializing_TradersList_ShouldThrowException()
         {
             // Arrange
             var CreateTraderProfileHandler = this.CreateTraderProfileHandler();

@@ -44,7 +44,7 @@ namespace EBroker.Management.Api.Tests.Controllers
         }
 
         [Fact]
-        public async Task AddFundsAsync_WhenAddedSuccessfully_ReturnsUpdatedBalance()
+        public async Task AddFunds_WhenAddedUptoOneLakh_ReturnsUpdatedBalance()
         {
             // Arrange
             var traderProfilesController = this.CreateFundsController();

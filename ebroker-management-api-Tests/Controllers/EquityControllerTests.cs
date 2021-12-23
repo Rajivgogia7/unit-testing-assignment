@@ -3,7 +3,6 @@ using EBroker.Management.Api.Models;
 using MediatR;
 using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
-using Microsoft.Extensions.Primitives;
 using Moq;
 using System;
 using System.Collections.Generic;
@@ -42,7 +41,7 @@ namespace EBroker.Management.Api.Tests.Controllers
         }
 
         [Fact]
-        public async Task GetEquitiesAsync_WhenFound_ReturnsListOfEquities()
+        public async Task GetEquities_WhenFound_ReturnsList()
         {
             // Arrange
             var equityController = this.CreateEquityController();
@@ -71,19 +70,19 @@ namespace EBroker.Management.Api.Tests.Controllers
         }
 
         [Fact]
-        public async Task GetEquitiesAsync_WhenNotFound_Returns_Exception()
+        public async Task GetEquities_WhenException_ReturnsException()
         {
             // Arrange
             var equityController = this.CreateEquityController();
             this.mockMediator.Setup(x => x.Send(It.IsAny<GetEquityQuery>(), CancellationToken.None))
                 .ThrowsAsync(new Exception());
 
-            // Act
+            // Act and Assert
             await Assert.ThrowsAsync<Exception>(() => equityController.GetEquitiesAsync());
         }
 
         [Fact]
-        public async Task GetEquityAsync_WhenFound_ReturnsListOfEquities()
+        public async Task GetEquity_WhenFound_ReturnsSingleEquityInformation()
         {
             // Arrange
             var equityController = this.CreateEquityController();
@@ -112,19 +111,19 @@ namespace EBroker.Management.Api.Tests.Controllers
         }
 
         [Fact]
-        public async Task GetEquityAsync_WhenNotFound_Returns_Exception()
+        public async Task GetEquity_WhenException_ThrowsException()
         {
             // Arrange
             var equityController = this.CreateEquityController();
             this.mockMediator.Setup(x => x.Send(It.IsAny<GetEquityQuery>(), CancellationToken.None))
                 .ThrowsAsync(new Exception());
 
-            // Act
+            // Act and Assert
             await Assert.ThrowsAsync<Exception>(() => equityController.GetEquityAsync("Test"));
         }
 
         [Fact]
-        public async Task AddEquityAsync_WhenCreatedSuccessfully_ReturnsEquityDetails()
+        public async Task AddEquity_WhenCreated_ReturnsEquityDetails()
         {
             // Arrange
             var equityController = this.CreateEquityController();
@@ -144,19 +143,19 @@ namespace EBroker.Management.Api.Tests.Controllers
         }
 
         [Fact]
-        public async Task AddEquityAsync_WhenException_ThrowsException()
+        public async Task AddEquity_WhenException_ThrowsException()
         {
             // Arrange
             var equityController = this.CreateEquityController();
             this.mockMediator.Setup(x => x.Send(It.IsAny<CreateEquityCommand>(), CancellationToken.None))
                 .ThrowsAsync(new Exception());
 
-            // Act
+            // Act and Assert
             await Assert.ThrowsAsync<Exception>(() => equityController.AddEquityAsync(new CreateEquityRequest()));
         }
 
         [Fact]
-        public async Task AddEquityStock_WhenCreatedSuccessfully_ReturnsEquityDetails()
+        public async Task AddEquityStock_WhenCreated_ReturnsEquityDetails()
         {
             // Arrange
             var equityController = this.CreateEquityController();

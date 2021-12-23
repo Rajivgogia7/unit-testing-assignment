@@ -224,7 +224,7 @@ var assemblies = [
   {
     "name": "ebroker-management-api",
     "classes": [
-      { "name": "EBroker.Management.Api.Configurations.DatabaseSetup", "rp": "ebroker_management_api_DatabaseSetup.html", "cl": 6, "ucl": 0, "cal": 6, "tl": 22, "ct": "LineCoverage", "mc": "-", "cb": 2, "tb": 2, "lch": [], "bch": [], "hc": [] },
+      { "name": "EBroker.Management.Api.Configurations.DatabaseSetup", "rp": "ebroker_management_api_DatabaseSetup.html", "cl": 7, "ucl": 0, "cal": 7, "tl": 25, "ct": "LineCoverage", "mc": "-", "cb": 2, "tb": 2, "lch": [], "bch": [], "hc": [] },
       { "name": "EBroker.Management.Api.Controllers.BaseController", "rp": "ebroker_management_api_BaseController.html", "cl": 28, "ucl": 0, "cal": 28, "tl": 62, "ct": "LineCoverage", "mc": "-", "cb": 6, "tb": 6, "lch": [], "bch": [], "hc": [] },
       { "name": "EBroker.Management.Api.Controllers.EquityController", "rp": "ebroker_management_api_EquityController.html", "cl": 39, "ucl": 0, "cal": 39, "tl": 98, "ct": "LineCoverage", "mc": "-", "cb": 0, "tb": 0, "lch": [], "bch": [], "hc": [] },
       { "name": "EBroker.Management.Api.Controllers.FundsController", "rp": "ebroker_management_api_FundsController.html", "cl": 13, "ucl": 0, "cal": 13, "tl": 41, "ct": "LineCoverage", "mc": "-", "cb": 0, "tb": 0, "lch": [], "bch": [], "hc": [] },
@@ -278,8 +278,9 @@ var assemblies = [
   {
     "name": "ebroker-management-data",
     "classes": [
-      { "name": "EBroker.Management.Data.Context.EBrokerDbContext", "rp": "ebroker_management_data_EBrokerDbContext.html", "cl": 0, "ucl": 15, "cal": 15, "tl": 34, "ct": "LineCoverage", "mc": "-", "cb": 0, "tb": 0, "lch": [], "bch": [], "hc": [] },
-      { "name": "EBroker.Management.Data.Repository.Repository<T>", "rp": "ebroker_management_data_Repository_1.html", "cl": 0, "ucl": 29, "cal": 29, "tl": 58, "ct": "LineCoverage", "mc": "-", "cb": 0, "tb": 4, "lch": [], "bch": [], "hc": [] },
+      { "name": "ebroker_management_data.Migrations.EBrokerDbContextModelSnapshot", "rp": "ebroker_management_data_EBrokerDbContextModelSnapshot.html", "cl": 0, "ucl": 71, "cal": 71, "tl": 90, "ct": "LineCoverage", "mc": "-", "cb": 0, "tb": 0, "lch": [], "bch": [], "hc": [] },
+      { "name": "ebroker_management_data.Migrations.InitialDatabase", "rp": "ebroker_management_data_InitialDatabase.html", "cl": 0, "ucl": 121, "cal": 121, "tl": 157, "ct": "LineCoverage", "mc": "-", "cb": 0, "tb": 0, "lch": [], "bch": [], "hc": [] },
+      { "name": "EBroker.Management.Data.Context.EBrokerDbContext", "rp": "ebroker_management_data_EBrokerDbContext.html", "cl": 0, "ucl": 27, "cal": 27, "tl": 56, "ct": "LineCoverage", "mc": "-", "cb": 0, "tb": 0, "lch": [], "bch": [], "hc": [] },
       { "name": "EBroker.Management.Data.UnitOfWork<T>", "rp": "ebroker_management_data_UnitOfWork_1.html", "cl": 0, "ucl": 54, "cal": 54, "tl": 101, "ct": "LineCoverage", "mc": "-", "cb": 0, "tb": 22, "lch": [], "bch": [], "hc": [] },
     ]},
   {

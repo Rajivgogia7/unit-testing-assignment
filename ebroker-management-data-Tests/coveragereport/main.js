@@ -224,7 +224,7 @@ var assemblies = [
   {
     "name": "ebroker-management-data",
     "classes": [
-      { "name": "EBroker.Management.Data.Context.EBrokerDbContext", "rp": "ebroker_management_data_EBrokerDbContext.html", "cl": 9, "ucl": 0, "cal": 9, "tl": 34, "ct": "LineCoverage", "mc": "-", "cb": 0, "tb": 0, "lch": [], "bch": [], "hc": [] },
+      { "name": "EBroker.Management.Data.Context.EBrokerDbContext", "rp": "ebroker_management_data_EBrokerDbContext.html", "cl": 27, "ucl": 0, "cal": 27, "tl": 56, "ct": "LineCoverage", "mc": "-", "cb": 0, "tb": 0, "lch": [], "bch": [], "hc": [] },
       { "name": "EBroker.Management.Data.UnitOfWork<T>", "rp": "ebroker_management_data_UnitOfWork_1.html", "cl": 52, "ucl": 2, "cal": 54, "tl": 101, "ct": "LineCoverage", "mc": "-", "cb": 20, "tb": 22, "lch": [], "bch": [], "hc": [] },
     ]},
   {

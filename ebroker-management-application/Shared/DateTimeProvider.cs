@@ -5,7 +5,7 @@ namespace EBroker.Management.Application.Shared
     public static class DateTimeProvider
     {
         public static Func<DateTime> Now = () => DateTime.Now;
-        public static Func<DateTime> Now_Sell = () => DateTime.Now;
+        public static Func<DateTime> NowSell = () => DateTime.Now;
 
         public static void SetDateTime(DateTime dateTimeNow)
         {
@@ -16,14 +16,14 @@ namespace EBroker.Management.Application.Shared
         {
             Now = () => DateTime.Now;
         }
-        public static void SetDateTime_Sell(DateTime dateTimeNow)
+        public static void SetDateTimeSell(DateTime dateTimeNow)
         {
-            Now_Sell = () => dateTimeNow;
+            NowSell = () => dateTimeNow;
         }
 
-        public static void ResetDateTime_Sell()
+        public static void ResetDateTimeSell()
         {
-            Now_Sell = () => DateTime.Now;
+            NowSell = () => DateTime.Now;
         }
     }
 }

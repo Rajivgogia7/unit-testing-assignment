@@ -25,14 +25,20 @@ namespace EBroker.Management.Api.Tests.Controllers
         [Fact]
         public void BaseController_Returns_ApplicationId_When_Available()
         {
+            //Act
             var result = _controller.GetApplicationId();
+
+            //Assert
             Assert.Equal("appId", result.ToString());
         }
 
         [Fact]
         public void BaseController_Returns_CorrelationId_When_Available()
         {
+            //Act
             var result = _controller.GetCorrelationId();
+
+            //Assert
             Assert.Equal("correlationId", result.ToString());
         }
     }

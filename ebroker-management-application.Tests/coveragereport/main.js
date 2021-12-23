@@ -259,7 +259,9 @@ var assemblies = [
   {
     "name": "ebroker-management-data",
     "classes": [
-      { "name": "EBroker.Management.Data.Context.EBrokerDbContext", "rp": "ebroker_management_data_EBrokerDbContext.html", "cl": 0, "ucl": 9, "cal": 9, "tl": 34, "ct": "LineCoverage", "mc": "-", "cb": 0, "tb": 0, "lch": [], "bch": [], "hc": [] },
+      { "name": "ebroker_management_data.Migrations.EBrokerDbContextModelSnapshot", "rp": "ebroker_management_data_EBrokerDbContextModelSnapshot.html", "cl": 0, "ucl": 71, "cal": 71, "tl": 90, "ct": "LineCoverage", "mc": "-", "cb": 0, "tb": 0, "lch": [], "bch": [], "hc": [] },
+      { "name": "ebroker_management_data.Migrations.InitialDatabase", "rp": "ebroker_management_data_InitialDatabase.html", "cl": 0, "ucl": 121, "cal": 121, "tl": 157, "ct": "LineCoverage", "mc": "-", "cb": 0, "tb": 0, "lch": [], "bch": [], "hc": [] },
+      { "name": "EBroker.Management.Data.Context.EBrokerDbContext", "rp": "ebroker_management_data_EBrokerDbContext.html", "cl": 0, "ucl": 27, "cal": 27, "tl": 56, "ct": "LineCoverage", "mc": "-", "cb": 0, "tb": 0, "lch": [], "bch": [], "hc": [] },
       { "name": "EBroker.Management.Data.UnitOfWork<T>", "rp": "ebroker_management_data_UnitOfWork_1.html", "cl": 0, "ucl": 54, "cal": 54, "tl": 101, "ct": "LineCoverage", "mc": "-", "cb": 0, "tb": 22, "lch": [], "bch": [], "hc": [] },
     ]},
   {

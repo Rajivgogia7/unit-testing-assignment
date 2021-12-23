@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "D:\\Documents\\Nagp\\Training and Assignment\\8. Unit Testing - pending\\Assignment\\2\\ebroker-management-api\\ebroker-management-data\\ebroker-management-data.csproj": {}
+    "D:\\Documents\\GitHub_Projects\\unit-testing-assignment\\ebroker-management-data\\ebroker-management-data.csproj": {}
   },
   "projects": {
-    "D:\\Documents\\Nagp\\Training and Assignment\\8. Unit Testing - pending\\Assignment\\2\\ebroker-management-api\\ebroker-management-data\\ebroker-management-data.csproj": {
+    "D:\\Documents\\GitHub_Projects\\unit-testing-assignment\\ebroker-management-data\\ebroker-management-data.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "D:\\Documents\\Nagp\\Training and Assignment\\8. Unit Testing - pending\\Assignment\\2\\ebroker-management-api\\ebroker-management-data\\ebroker-management-data.csproj",
+        "projectUniqueName": "D:\\Documents\\GitHub_Projects\\unit-testing-assignment\\ebroker-management-data\\ebroker-management-data.csproj",
         "projectName": "ebroker-management-data",
-        "projectPath": "D:\\Documents\\Nagp\\Training and Assignment\\8. Unit Testing - pending\\Assignment\\2\\ebroker-management-api\\ebroker-management-data\\ebroker-management-data.csproj",
+        "projectPath": "D:\\Documents\\GitHub_Projects\\unit-testing-assignment\\ebroker-management-data\\ebroker-management-data.csproj",
         "packagesPath": "C:\\Users\\rajivgogia\\.nuget\\packages\\",
-        "outputPath": "D:\\Documents\\Nagp\\Training and Assignment\\8. Unit Testing - pending\\Assignment\\2\\ebroker-management-api\\ebroker-management-data\\obj\\",
+        "outputPath": "D:\\Documents\\GitHub_Projects\\unit-testing-assignment\\ebroker-management-data\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
@@ -31,8 +31,8 @@
           "netcoreapp3.1": {
             "targetAlias": "netcoreapp3.1",
             "projectReferences": {
-              "D:\\Documents\\Nagp\\Training and Assignment\\8. Unit Testing - pending\\Assignment\\2\\ebroker-management-api\\ebroker-management-domain\\ebroker-management-domain.csproj": {
-                "projectPath": "D:\\Documents\\Nagp\\Training and Assignment\\8. Unit Testing - pending\\Assignment\\2\\ebroker-management-api\\ebroker-management-domain\\ebroker-management-domain.csproj"
+              "D:\\Documents\\GitHub_Projects\\unit-testing-assignment\\ebroker-management-domain\\ebroker-management-domain.csproj": {
+                "projectPath": "D:\\Documents\\GitHub_Projects\\unit-testing-assignment\\ebroker-management-domain\\ebroker-management-domain.csproj"
               }
             }
           }
@@ -47,13 +47,27 @@
         "netcoreapp3.1": {
           "targetAlias": "netcoreapp3.1",
           "dependencies": {
+            "Microsoft.EntityFrameworkCore": {
+              "target": "Package",
+              "version": "[5.0.0, )"
+            },
             "Microsoft.EntityFrameworkCore.Relational": {
               "target": "Package",
-              "version": "[5.0.4, )"
+              "version": "[5.0.0, )"
+            },
+            "Microsoft.EntityFrameworkCore.Tools": {
+              "include": "Runtime, Build, Native, ContentFiles, Analyzers, BuildTransitive",
+              "suppressParent": "All",
+              "target": "Package",
+              "version": "[5.0.0, )"
             },
             "Newtonsoft.Json": {
               "target": "Package",
               "version": "[13.0.1, )"
+            },
+            "Pomelo.EntityFrameworkCore.MySql": {
+              "target": "Package",
+              "version": "[5.0.0-alpha.2, )"
             }
           },
           "imports": [
@@ -75,14 +89,14 @@
         }
       }
     },
-    "D:\\Documents\\Nagp\\Training and Assignment\\8. Unit Testing - pending\\Assignment\\2\\ebroker-management-api\\ebroker-management-domain\\ebroker-management-domain.csproj": {
+    "D:\\Documents\\GitHub_Projects\\unit-testing-assignment\\ebroker-management-domain\\ebroker-management-domain.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "D:\\Documents\\Nagp\\Training and Assignment\\8. Unit Testing - pending\\Assignment\\2\\ebroker-management-api\\ebroker-management-domain\\ebroker-management-domain.csproj",
+        "projectUniqueName": "D:\\Documents\\GitHub_Projects\\unit-testing-assignment\\ebroker-management-domain\\ebroker-management-domain.csproj",
         "projectName": "ebroker-management-domain",
-        "projectPath": "D:\\Documents\\Nagp\\Training and Assignment\\8. Unit Testing - pending\\Assignment\\2\\ebroker-management-api\\ebroker-management-domain\\ebroker-management-domain.csproj",
+        "projectPath": "D:\\Documents\\GitHub_Projects\\unit-testing-assignment\\ebroker-management-domain\\ebroker-management-domain.csproj",
         "packagesPath": "C:\\Users\\rajivgogia\\.nuget\\packages\\",
-        "outputPath": "D:\\Documents\\Nagp\\Training and Assignment\\8. Unit Testing - pending\\Assignment\\2\\ebroker-management-api\\ebroker-management-domain\\obj\\",
+        "outputPath": "D:\\Documents\\GitHub_Projects\\unit-testing-assignment\\ebroker-management-domain\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"

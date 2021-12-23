@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "D:\\Documents\\Nagp\\Training and Assignment\\8. Unit Testing - pending\\Assignment\\2\\ebroker-management-api\\ebroker-management-domain\\ebroker-management-domain.csproj": {}
+    "D:\\Documents\\GitHub_Projects\\unit-testing-assignment\\ebroker-management-domain\\ebroker-management-domain.csproj": {}
   },
   "projects": {
-    "D:\\Documents\\Nagp\\Training and Assignment\\8. Unit Testing - pending\\Assignment\\2\\ebroker-management-api\\ebroker-management-domain\\ebroker-management-domain.csproj": {
+    "D:\\Documents\\GitHub_Projects\\unit-testing-assignment\\ebroker-management-domain\\ebroker-management-domain.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "D:\\Documents\\Nagp\\Training and Assignment\\8. Unit Testing - pending\\Assignment\\2\\ebroker-management-api\\ebroker-management-domain\\ebroker-management-domain.csproj",
+        "projectUniqueName": "D:\\Documents\\GitHub_Projects\\unit-testing-assignment\\ebroker-management-domain\\ebroker-management-domain.csproj",
         "projectName": "ebroker-management-domain",
-        "projectPath": "D:\\Documents\\Nagp\\Training and Assignment\\8. Unit Testing - pending\\Assignment\\2\\ebroker-management-api\\ebroker-management-domain\\ebroker-management-domain.csproj",
+        "projectPath": "D:\\Documents\\GitHub_Projects\\unit-testing-assignment\\ebroker-management-domain\\ebroker-management-domain.csproj",
         "packagesPath": "C:\\Users\\rajivgogia\\.nuget\\packages\\",
-        "outputPath": "D:\\Documents\\Nagp\\Training and Assignment\\8. Unit Testing - pending\\Assignment\\2\\ebroker-management-api\\ebroker-management-domain\\obj\\",
+        "outputPath": "D:\\Documents\\GitHub_Projects\\unit-testing-assignment\\ebroker-management-domain\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"

@@ -46,7 +46,7 @@ namespace EBroker.Management.Application.Tests.Traders.Commands.SellEquity{
 
             var SellEquityHandler = this.CreateSellEquityHandler();
 
-            DateTimeProvider.SetDateTime_Sell(new DateTime(2021, 12, 20, 9, 30, 0));
+            DateTimeProvider.SetDateTimeSell(new DateTime(2021, 12, 20, 9, 30, 0));
 
             var request = new SellEquityCommand
             {
@@ -114,7 +114,7 @@ namespace EBroker.Management.Application.Tests.Traders.Commands.SellEquity{
 
             var SellEquityHandler = this.CreateSellEquityHandler();
 
-            DateTimeProvider.SetDateTime_Sell(new DateTime(2021, 12, 20, 15, 30, 0)); //3.30 PM
+            DateTimeProvider.SetDateTimeSell(new DateTime(2021, 12, 20, 15, 30, 0)); //3.30 PM
 
             var request = new SellEquityCommand
             {
@@ -182,7 +182,7 @@ namespace EBroker.Management.Application.Tests.Traders.Commands.SellEquity{
 
             var SellEquityHandler = this.CreateSellEquityHandler();
 
-            DateTimeProvider.SetDateTime_Sell(new DateTime(2021, 12, 19, 9, 30, 0)); //Sunday
+            DateTimeProvider.SetDateTimeSell(new DateTime(2021, 12, 19, 9, 30, 0)); //Sunday
 
             var request = new SellEquityCommand
             {
@@ -251,7 +251,7 @@ namespace EBroker.Management.Application.Tests.Traders.Commands.SellEquity{
 
             var SellEquityHandler = this.CreateSellEquityHandler();
 
-            DateTimeProvider.SetDateTime_Sell(new DateTime(2021, 12, 21, 09, 30, 0)); // Tuesday - 9.30 AM
+            DateTimeProvider.SetDateTimeSell(new DateTime(2021, 12, 21, 09, 30, 0)); // Tuesday - 9.30 AM
 
             var request = new SellEquityCommand
             {
@@ -320,7 +320,7 @@ namespace EBroker.Management.Application.Tests.Traders.Commands.SellEquity{
 
             var SellEquityHandler = this.CreateSellEquityHandler();
 
-            DateTimeProvider.SetDateTime_Sell(new DateTime(2021, 12, 21, 09, 30, 0)); // Tuesday - 9.30 AM
+            DateTimeProvider.SetDateTimeSell(new DateTime(2021, 12, 21, 09, 30, 0)); // Tuesday - 9.30 AM
 
             var request = new SellEquityCommand
             {
@@ -388,7 +388,7 @@ namespace EBroker.Management.Application.Tests.Traders.Commands.SellEquity{
 
             var SellEquityHandler = this.CreateSellEquityHandler();
 
-            DateTimeProvider.SetDateTime_Sell(new DateTime(2021, 12, 21, 9, 30, 0)); // Tuesday - 9.30 AM
+            DateTimeProvider.SetDateTimeSell(new DateTime(2021, 12, 21, 9, 30, 0)); // Tuesday - 9.30 AM
 
             var request = new SellEquityCommand
             {
@@ -472,7 +472,7 @@ namespace EBroker.Management.Application.Tests.Traders.Commands.SellEquity{
 
         public void Dispose()
         {
-            DateTimeProvider.ResetDateTime_Sell();
+            DateTimeProvider.ResetDateTimeSell();
             Dispose(true);
             GC.SuppressFinalize(this);
         }

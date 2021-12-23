@@ -7,7 +7,6 @@ namespace EBroker.Management.Data.Context
     public interface IDbContextBase
     {
         int SaveChanges();
-
         void Dispose();
         Task<int> SaveChangesAsync(CancellationToken cancellationToken = default);
         DatabaseFacade Database { get; }

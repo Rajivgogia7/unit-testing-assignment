@@ -50,7 +50,7 @@ namespace EBroker.Management.Api.Tests.Controllers
         }
 
         [Fact]
-        public async Task GetTraderProfilesAsync_WhenFound_ReturnsListOfProfiles()
+        public async Task GetTraderProfiles_WhenFound_ReturnsList()
         {
             // Arrange
             var traderProfilesController = this.CreateTraderProfilesController();
@@ -79,7 +79,7 @@ namespace EBroker.Management.Api.Tests.Controllers
         }
 
         [Fact]
-        public async Task GetTraderProfilesAsync_WhenNotFound_Throws_Exception()
+        public async Task GetTraderProfiles_WhenException_Throws_Exception()
         {
             // Arrange
             var countryProfilesController = this.CreateTraderProfilesController();
@@ -91,7 +91,7 @@ namespace EBroker.Management.Api.Tests.Controllers
         }
 
         [Fact]
-        public async Task GetTraderProfilesDetailsAsync_WhenFound_ReturnsListOfProfiles()
+        public async Task GetTraderProfilesDetails_WhenFound_ReturnsList()
         {
             // Arrange
             var traderProfilesController = this.CreateTraderProfilesController();
@@ -120,7 +120,7 @@ namespace EBroker.Management.Api.Tests.Controllers
         }
 
         [Fact]
-        public async Task GetTraderProfilesDetailsAsync_WhenNotFound_Throws_Exception()
+        public async Task GetTraderProfilesDetails_WhenException_ThrowsException()
         {
             // Arrange
             var countryProfilesController = this.CreateTraderProfilesController();
@@ -132,7 +132,7 @@ namespace EBroker.Management.Api.Tests.Controllers
         }
 
         [Fact]
-        public async Task CreateTraderProfileAsync_WhenCreatedSuccessfully_ReturnProfileDetails()
+        public async Task CreateTraderProfile_WhenCreated_ReturnProfileDetails()
         {
             // Arrange
             var traderProfilesController = this.CreateTraderProfilesController();
@@ -152,7 +152,7 @@ namespace EBroker.Management.Api.Tests.Controllers
         }
 
         [Fact]
-        public async Task CreateTraderProfileAsync_WhenException_ThrowsException()
+        public async Task CreateTraderProfile_WhenException_ThrowsException()
         {
             // Arrange
             var traderProfilesController = this.CreateTraderProfilesController();
@@ -164,7 +164,7 @@ namespace EBroker.Management.Api.Tests.Controllers
         }
 
         [Fact]
-        public async Task BuyEquityAsync_WhenPurchasedSuccessfully_ReturnsEquityDetails()
+        public async Task BuyEquity_WhenPurchased_ReturnsEquityDetails()
         {
             // Arrange
             var traderProfilesController = this.CreateTraderProfilesController();
@@ -185,7 +185,7 @@ namespace EBroker.Management.Api.Tests.Controllers
         }
 
         [Fact]
-        public async Task BuyEquityAsync_WhenException_ThrowsException()
+        public async Task BuyEquity_WhenException_ThrowsException()
         {
             // Arrange
             var traderProfilesController = this.CreateTraderProfilesController();
@@ -197,7 +197,7 @@ namespace EBroker.Management.Api.Tests.Controllers
         }
 
         [Fact]
-        public async Task SellEquityAsyncAsync_WhenSoldSuccessfully_ReturnsProfiles()
+        public async Task SellEquity_WhenSold_ReturnsEquityUpdatedStock()
         {
             // Arrange
             var traderProfilesController = this.CreateTraderProfilesController();

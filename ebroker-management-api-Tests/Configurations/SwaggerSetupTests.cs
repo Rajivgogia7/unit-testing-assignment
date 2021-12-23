@@ -21,26 +21,36 @@ namespace EBroker.Management.Api.Tests.Configurations
         }
 
         [Fact]
-        public async Task Should_Throw_Exception_When_Service_Is_Null()
+        public async Task ShouldThrowException_When_Service_Is_Null()
         {
+            //Arrange
             ServiceCollection collection = null;
+
+            //Act and assert
             Assert.Throws<ArgumentNullException>(() => collection.AddSwaggerSetup());
         }
 
         [Fact]
-        public async Task Should_Add_SwaggerGen_Service()
+        public async Task ShouldAdd_SwaggerGen_Service()
         {
+            //Arrange
             ServiceCollection collection = new ServiceCollection();
+
+            //Act
             collection.AddSwaggerSetup();
 
+            //Assert
             Assert.Contains(collection, x => x.ServiceType == typeof(ISwaggerProvider));
           
         }
 
         [Fact]
-        public async Task Should_Throw_Exception_When_App_Is_Null()
+        public async Task ShouldThrowException_When_App_Is_Null()
         {
+            //Arrange
             ApplicationBuilder appBuilder = null;
+
+            //Act and assert
             Assert.Throws<ArgumentNullException>(() => appBuilder.UseSwaggerSetup());
         }
        
