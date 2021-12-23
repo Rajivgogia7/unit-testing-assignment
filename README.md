@@ -68,7 +68,7 @@ To generate coverage report: dotnet test /p:CollectCoverage=true /p:CoverletOutp
 
 ## APIs
 ```
-Uploaded a file in the repository itself - Unit Testing Assignment.postman_collection containing the request for:
+Uploaded a file in the repository itself - Unit Testing Assignment.postman_collection containing the requests for:
 
 * Adding Trader
 * Getting All Traders
