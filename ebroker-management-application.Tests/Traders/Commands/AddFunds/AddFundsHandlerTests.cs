@@ -32,7 +32,7 @@ namespace EBroker.Management.Application.Tests.Traders.Commands.AddFunds{
             );
         }
 
-        //When Funds Added less than 1 Lakh to valid vendor account
+        //When Funds Added less than 1 Lakh to valid trader account
         [Fact]
         public async Task Handle_WhenFundsAdded_Lessthan1Lakh_ShouldAdd_InTraderAccountWithoutCharges()
         {
@@ -71,7 +71,7 @@ namespace EBroker.Management.Application.Tests.Traders.Commands.AddFunds{
             this.mockUnitOfWork.Verify(x => x.Rollback(), Times.Never);
         }
 
-        //When Funds Added more than 1 lakh to valid vendor account, the fund should be added after deducting charges (0.05%)
+        //When Funds Added more than 1 lakh to valid trader account, the fund should be added after deducting charges (0.05%)
         [Fact]
         public async Task Handle_WhenFundsAdded_Morethan1Lakh_ShouldAdd_InTraderAccountWithCharges()
         {
@@ -111,7 +111,7 @@ namespace EBroker.Management.Application.Tests.Traders.Commands.AddFunds{
             this.mockUnitOfWork.Verify(x => x.Rollback(), Times.Never);
         }
 
-        //When Funds Added to Invalid Vendor Account
+        //When Funds Added to Invalid Trader Account
         [Fact]
         public async Task Handle_WhenFundsAdded_WithInvalidTraderCode_ShouldReturn_ResultWithErrorMessage()
         {
